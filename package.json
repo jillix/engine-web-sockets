@@ -1,5 +1,5 @@
 {
-  "name": "view",
+  "name": "web-sockets",
   "version": "0.1.0",
   "description": "The Swiss knife for Engine Web Socket communication.",
   "repository": {
@@ -18,7 +18,7 @@
   "clientDependencies": [
     "./main.js"
   ],
-  "main": "main.js",
+  "main": "server/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
