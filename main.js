@@ -3,3 +3,8 @@ exports.init = function () {
         this.emit("data", err, data);
     }.bind(this));
 };
+
+exports.wsEmit = function () {
+    debugger
+    //this.ws.send(
+};
