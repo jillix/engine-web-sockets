@@ -4,7 +4,6 @@ exports.init = function () {
     }.bind(this));
 };
 
-exports.wsEmit = function () {
-    debugger
-    //this.ws.send(
+exports.wsEmit = function (ev, data) {
+    this.ws.send(null, data);
 };
