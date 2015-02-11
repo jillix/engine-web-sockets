@@ -1,0 +1,21 @@
+{
+    "name": "view",
+    "version": "v0.1.0",
+    "description": "The Swiss knife for Engine Web Socket communication.",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/jillix/web-sockets.git"
+    },
+    "keywords": [
+        "page",
+        "render"
+    ],
+    "author": "adioo",
+    "bugs": {
+        "url": "https://github.com/jillix/web-sockets/issues"
+    },
+    "homepage": "https://github.com/jillix/web-sockets",
+    "clientDependencies": [
+        "./main.js"
+    ]
+}
