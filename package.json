@@ -1,10 +1,10 @@
 {
-  "name": "web-sockets",
+  "name": "engine-web-sockets",
   "version": "0.1.0",
-  "description": "The Swiss knife for Engine Web Socket communication.",
+  "description": "The Swiss army knife for Engine Web Socket communication.",
   "repository": {
     "type": "git",
-    "url": "git://github.com/jillix/web-sockets.git"
+    "url": "git://github.com/jillix/engine-web-sockets.git"
   },
   "keywords": [
     "page",
@@ -12,9 +12,9 @@
   ],
   "author": "jillix <contact@jillix.com> http://jillix.com",
   "bugs": {
-    "url": "https://github.com/jillix/web-sockets/issues"
+    "url": "https://github.com/jillix/engine-web-sockets/issues"
   },
-  "homepage": "https://github.com/jillix/web-sockets",
+  "homepage": "https://github.com/jillix/engine-web-sockets",
   "clientDependencies": [
     "./main.js"
   ],

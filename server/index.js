@@ -1,23 +1,3 @@
-exports.init = function () {
-    this.clients = {};
-    this.on("_clientConnected", engine.flow(this, [{
-        call: "_clientConnected"
-    }]));
-};
-
-/**
- * _clientConnected
- * This function is called when a client is connected.
- *
- * @name _clientConnected
- * @function
- * @param {Object} link The link object.
- * @return {undefined}
- */
-exports._clientConnected = function (link) {
-    this.clients[link.id] = new Client(link, this.clients, this._config);
-};
-
 /**
  * Client
  * Creates a new `Client` instance.
@@ -73,4 +53,32 @@ function Client(link, clients, conf) {
  */
 Client.prototype.on = function () {
     this.socket.on.apply(this, arguments);
+};
+
+/**
+ * init
+ * The init function.
+ *
+ * @name init
+ * @function
+ * @return {undefined}
+ */
+exports.init = function () {
+    this.clients = {};
+    this.on("_clientConnected", engine.flow(this, [{
+        call: "_clientConnected"
+    }]));
+};
+
+/**
+ * _clientConnected
+ * This function is called when a client is connected.
+ *
+ * @name _clientConnected
+ * @function
+ * @param {Object} link The link object.
+ * @return {undefined}
+ */
+exports._clientConnected = function (link) {
+    this.clients[link.id] = new Client(link, this.clients, this._config);
 };
